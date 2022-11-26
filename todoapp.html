@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="text-align: right">
+        <input type="button" value="logout" class="btn"  onclick="logout()">
+    </div>
+    <div class="main" style="margin-left: 190px;">
+        <h1 style="color: #A9A9A9;font-size: 42px;">Welcome <span class="text">User</span></h1>
+    </div>
+    <div class="main" style="margin-left: 190px;">
+        <!-- <form onsubmit="addTask(event)" action=""> -->
+            <div id="inputText">
+                <input type="text" id="task" placeholder="Add Task">
+                <!-- <input type="submit" value="Add" class="btn"> -->
+                <button onclick="sendtodo()" class="btn" id="button">Add</button>
+                <button onclick="getdata()" class="btn" id="button">Get List</button>
+            </div></br>
+        <!-- </form> -->
+    <!-- </div> -->
+    <!-- <div class="main"  style="margin-left: 190px;"> -->
+    <ul id="parent"></ul> 
+    </div>
+    <script type="module" src="todo.js"></script>
+</body>
+</html>
